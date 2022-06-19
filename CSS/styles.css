@@ -1,0 +1,127 @@
+body {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 25px;
+    line-height: 1.5;
+    margin: 0;
+    background-image: url(../imagens/bg.png);
+    background-position: center;
+}
+
+#main {
+    width: 92%;
+    background:linear-gradient(
+        90deg, 
+        rgba(244, 249, 250, 0.5), 
+        rgba(244, 249, 250, 0.5)
+        );
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+img {
+    max-width: fit-content;
+}
+
+.brasao {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+}
+
+#title {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.subTitulo {
+    text-align: center;
+    margin: 30px 0;
+    font-weight: bold;
+}
+
+#image {
+    width: 80vmin;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;    
+}
+
+#img-caption {
+    text-align: center;
+    color: darkgrey;
+    font-size: 1.2rem;
+    margin-top: 0;
+    padding-bottom: 1rem;
+}
+
+#headline {
+    margin: 30px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+ul {
+    margin: 0 30px;
+    padding: 0 30px;
+}
+
+li {
+    text-align: justify;
+    padding-top: 1rem;
+}
+
+h3 {
+    margin: 1.5rem 0 0 0;
+    font-size: 2rem;
+    text-align: left;
+}
+
+li strong, h3 strong {
+    font-weight: bold;
+}
+
+footer, .wiki {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 25px;
+}
+
+footer p {
+    font-style: italic;
+}
+
+@media screen and (max-width: 460px) {
+    #main {
+        width: 99%;
+        margin: 10px auto;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+
+    .brasao{
+        max-width: 25%;
+    }
+    
+    #title {
+        font-size: 3rem;
+        font-weight: bold;
+        word-wrap: normal;
+        margin: 0 2px;
+    }
+    
+    #img-caption {
+        font-size: 1rem;
+    }
+
+    ul {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+} 

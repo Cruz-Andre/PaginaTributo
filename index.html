@@ -1,0 +1,148 @@
+<!-- Build a Tribute Page
+
+    User Stories:
+
+1 - Your tribute page should have an element with a corresponding id="main", which contains all other elements
+
+2 - You should see an element with an id of title, which contains a string (i.e. text), that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug")
+
+3 - You should see either a figure or a div element with an id of img-div
+
+4 - Within the #img-div element, you should see an img element with a corresponding id="image"
+
+5 - Within the #img-div element, you should see an element with a corresponding id="img-caption" that contains textual content describing the image shown in #img-div
+
+6 - You should see an element with a corresponding id="tribute-info", which contains textual content describing the subject of the tribute page
+
+7 - You should see an a element with a corresponding id="tribute-link", which links to an outside site, that contains additional information about the subject of the tribute page. HINT: You must give your element an attribute of target and set it to _blank in order for your link to open in a new tab
+
+8 - Your #image should use max-width and height properties to resize responsively, relative to the width of its parent element, without exceeding its original size
+
+9 - Your img element should be centered within its parent element
+
+Fulfill the user stories and pass all the tests below to complete this project. Give it your own personal style.
+Happy Coding!
+Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to link your stylesheet and apply your CSS -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="CSS/reset.css">
+        <link rel="stylesheet" href="CSS/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway&family=Ubuntu&display=swap" rel="stylesheet">
+        <title>Filipe, Duque de Edimburgo</title>
+    </head>
+    <body>
+        <main id="main">
+            <figure>
+                <img class="brasao" alt="Coat of Arms of Philip, Duke of Edinburgh.svg" src="imagens/foto1.png"/>
+            </figure>
+            <h1 id="title">Filipe, Duque de Edimburgo</h1>
+            <p class="subTitulo">A força e permanência, em todos os anos, para a Rainha Elisabeth II</p>
+            <figure id="img-div">
+                <img id="image" src="imagens/foto2.jpg" alt="Rainha Elisabeth 2ª e o Prince Philip acenam do balcão do Palácio de Buckingham, no dia da Coroação, em 1953"/>
+                <figcaption id="img-caption">Rainha Elisabeth II e o consorte Duque de Edimburgo no dia da coroação, em 1953</figcaption>
+            </figure>
+            <section id="tribute-info">
+                <h2 id="headline">Linha de tempo do Duque de Edimburgo</h2>
+                <ul>
+                    <li><strong>10 de Junho de 1921</strong> - Nasce o príncipe Philippos da Grécia e Dinamarca, filho do príncipe Andrew da Grécia e da princesa Alice de Battenberg na casa da família, Mon Repos, em Corfu. Ele é o caçula de cinco filhos.</li>
+                    <li><strong>Dezembro de 1922</strong> - O príncipe Philip, de 18 meses, viajando em uma cama improvisada feita de uma caixa laranja, é evacuado da Grécia em um navio da Marinha Real depois que o rei Constantino I é forçado a abdicar.</li>
+                    <li><strong>1923</strong> - a família instala-se nos arredores de Paris. Mas a princesa Alice começa a sofrer de problemas de saúde mental e suas crenças religiosas se tornam mais excêntricas.</li>
+                    <li><strong>1928</strong> - Aos oito anos, Philip viaja para a Inglaterra para morar com sua avó e seu tio.</li>
+                    <h3><strong>Década de 1930</strong></h3>
+                    <li><strong>1930</strong> - A mãe de Philip, Princesa Alice, é diagnosticada com esquizofrenia e internada em um sanatório na Suíça por dois anos. Seu pai, o príncipe Andrew, vai para a Riveria francesa. Philip é enviado para a Cheam Preparatory School, no Reino Unido.</li>
+                    <li><strong>1933</strong> - Aos 12 anos, ele passa dois períodos na Salem School, no sul da Alemanha, dirigida por Kurt Hahn, que inspirou Philip a criar o Prêmio do Duque de Edimburgo.</li>
+                    <li><strong>Novembro de 1934</strong> - O príncipe Philip e a princesa Elizabeth comparecem ao casamento da prima de Philip, a princesa Marina, com o tio de Elizabeth, George, duque de Kent, na Abadia de Westminster.</li>
+                    <li><strong>Janeiro de 1936</strong> - George V morre e é sucedido por seu filho Edward VIII, que abdica 11 meses depois por causa de seu amor pela divorciada americana Wallis Simpson.</li>
+                    <li><strong>Maio de 1937</strong> - Coroação de George VI - A princesa Elizabeth vê seu pai ser coroado rei. Philip está entre a congregação.</li>
+                    <li><strong>Novembro de 1937</strong> - O príncipe Philip assiste ao funeral na Alemanha de sua irmã Cécilie, morta em um acidente de avião aos 26 anos.</li>
+                    <li><strong>Maio de 1939</strong> - Antes do início da Segunda Guerra Mundial, Philip termina em Gordonstoun e inicia sua carreira naval no Britannia Royal Naval College em Dartmouth, onde ganha dois prêmios por ser o melhor cadete.</li>
+                    <li><strong>Julho de 1939</strong> -  A jovem princesa Elizabeth se apaixona por Philip quando ele a acompanha com sua irmã, a princesa Margaret, durante um passeio pela faculdade.</li>
+                    <h3><strong>Década de 1940</strong></h3>
+                    <li><strong>1940</strong> - Philip entra no encouraçado HMS Ramillies em Colombo como aspirante e passa seis meses no Oceano Índico.</li>
+                    <li><strong>Janeiro de 1941</strong> - Ele serve no HMS Valiant em Alexandria e dois meses depois é mencionado em despachos por suas ações durante a Segunda Guerra Mundial na Batalha de Matapan, após avistar um navio inimigo inesperado com as luzes de busca. Mais tarde, ele é premiado com a Cruz de Guerra Grega de Valor.</li>
+                    <li><strong>1942</strong> - Philip sobe na hierarquia e se torna um dos oficiais mais jovens da Marinha Real a ser nomeado primeiro-tenente e segundo em comando de um navio - HMS Wallace.</li>
+                    <li><strong>1943</strong> - HMS Wallace é despachado para o Mediterrâneo e fornece cobertura para a cabeçeira de praia canadense dos desembarques aliados na Sicília.</li>
+                    <li><strong>1943</strong> - O príncipe Philip fica várias vezes com a família real durante as férias e, após uma visita de Natal, a princesa Elizabeth coloca uma fotografia dele em sua penteadeira.</li>
+                    <li><strong>Fevereiro de 1944</strong> - Philip é nomeado primeiro-tenente e segundo em comando do novo Contratorpedeiro de Frota HMS Whelp, que navega para o Oceano Índico para se juntar à Frota Britânica do Pacífico.</li>
+                    <li><strong>2 de setembro de 1945</strong> - Philip está na baía de Tóquio quando os japoneses se rendem.</li>
+                    <li><strong>1946</strong> - Philip retorna ao Reino Unido, passando um tempo em escolas de treinamento naval. Ele pede a George VI a mão da princesa Elizabeth em casamento.</li>
+                    <li><strong>29 de fevereiro de 1947 </strong> - Philip renuncia a seus direitos ao trono grego e torna-se súdito britânico - Tenente Philip Mountbatten.</li>
+                    <li><strong>9 de julho de 1947</strong> - é anunciado o noivado do tenente Philip Mountbatten com a princesa Elizabeth.</li>
+                    <li><strong>20 de novembro de 1947</strong> - Philip casa-se com a princesa Elizabeth na Abadia de Westminster. Ele é feito duque de Edimburgo, conde de Merioneth e barão de Greenwich pouco antes de seu casamento.</li>
+                    <li><strong>14 de novembro de 1948</strong> - O duque se torna pai quando a princesa Elizabeth dá à luz seu primeiro filho - um filho e futuro rei, o príncipe Charles.</li>
+                    <li><strong>1949</strong> - Philip é nomeado primeiro-tenente e segundo em comando do HMS Checkers, operando de Malta com a frota do Mediterrâneo.</li>
+                    <h3><strong>Década de 1950</strong></h3>
+                    <li><strong>1950</strong> - Ele é promovido a Tenente-Comandante e, em seguida, nomeado no comando da fragata HMS Magpie em Malta.</li>
+                    <li><strong>21 de outubro de 1950</strong> - Nasce o segundo filho de Philip e Elizabeth, a princesa Anne.</li>
+                    <li><strong>1951</strong> - O duque e a princesa Elizabeth voltam de Malta para a Casa Clarence. Philip deixa a Marinha prematuramente por causa da deterioração da saúde do rei George VI e a princesa Elizabeth é obrigada a assumir mais responsabilidades reais.</li>
+                    <li><strong>Outubro de 1951</strong> - A princesa Elizabeth e Philip fazem sua primeira grande viagem juntos ao Canadá e aos Estados Unidos em outubro e novembro de 1951, após a qual o duque é nomeado conselheiro particular.</li>
+                    <li><strong>6 de fevereiro de 1952</strong> - George VI morre e a princesa Elizabeth torna-se rainha enquanto estava no Quênia em uma viagem à Comunidade Britânica.</li>
+                    <li><strong>2 de junho de 1953</strong> - Coroação da Rainha na Abadia de Westminster. O duque de Edimburgo jurou ser o “vassalo da vida” de sua esposa e foi o primeiro leigo a prestar terna homenagem ao monarca recém-coroado.</li>
+                    <li><strong>1956</strong> - O Duque lança o Prêmio Duque de Edimburgo, inspirado por seu tempo em Gordonstoun. O duque percorre a Comunidade no Royal Yacht Britannia, sem a Rainha.</li>
+                    <li><strong>Fevereiro de 1957</strong> - A Rainha dá ao Duque o estilo e o título de Príncipe do Reino Unido.</li>
+                    <h3><strong>Década de 1960</strong></h3>
+                    <li><strong>Fevereiro de 1960</strong> - Nasce o príncipe Andrew.</li>
+                    <li><strong>1961</strong> - O duque se torna o primeiro presidente do World Wildlife Fund-UK, tornando-se seu presidente internacional em 1981. Mas o fato de atirar em um tigre na Índia gera críticas.</li>
+                    <li><strong>1964</strong> - Nasce o príncipe Edward.</li>
+                    <h3><strong>Década de 1970</strong></h3>
+                    <li><strong>1977</strong> - O Jubileu de Prata da Rainha - 25 anos no trono.</li>
+                    <h3><strong>Década de 1980</strong></h3>
+                    <li><strong>1986</strong> - O duque faz um comentário sobre “olhos abertos” em uma visita oficial à China. A Rainha comemora 60 anos.</li>
+                    <h3><strong>Década de 1990</strong></h3>
+                    <li><strong>1992</strong> - O "annus horribilis" da Rainha - O divórcio da Princesa Real e do Capitão Phillips, o Príncipe e a Princesa de Gales e o Duque e a Duquesa de York separam-se e o Castelo de Windsor é atingido por um incêndio.</li>
+                    <li><strong>1993</strong> - A Rainha passa a pagar imposto de renda ao governo.</li>
+                    <li><strong>1996</strong> - O Príncipe de Gales divorcia-se de Diana, Princesa de Gales. O duque e a duquesa de York se divorciam.</li>
+                    <li><strong>31 de agosto de 1997</strong> - Diana, Princesa de Gales, morre em um acidente de carro.</li>
+                    <li><strong>20 de novembro de 1997</strong> - Aniversário de Casamento de Ouro da Rainha e do Duque.</li>
+                    <li><strong>Abril de 1999</strong> - Uma agenda lotada e exigente às vezes cobrava seu preço. Enquanto acompanhava a Rainha em uma visita oficial à Coreia do Sul, Philip adormece em um banquete.</li>
+                    <h3><strong>Anos 2000</strong></h3>
+                    <li><strong>2000</strong> - Um novo milênio e 100 anos da Rainha Mãe.</li>
+                    <li><strong>2002</strong> - O Jubileu de Ouro da Rainha - 50 anos no trono. A irmã mais nova da rainha, a princesa Margaret, e sua mãe, a rainha-mãe, morrem.</li>
+                    <li><strong>2002</strong> - Philip pergunta a um indígena australiano se eles ainda jogam lanças um no outro durante uma viagem pela Austrália.</li>
+                    <li><strong>2007</strong> - A Rainha e o Duque comemoram seu aniversário de casamento de diamante</li>
+                    <li><strong>Abril de 2008</strong> - O Duque é internado no hospital com uma infecção no peito que o obriga a cancelar uma série de compromissos. Ele passa três noites no Hospital privado do Rei Edward VII</li>
+                    <li><strong>2009</strong> - O duque se torna o consorte real mais antigo da história britânica, ultrapassando a rainha Carlota, esposa do rei Jorge III.</li>
+                    <h3><strong>Década de 2010</strong></h3>
+                    <li><strong>2010</strong> - O Palácio de Buckingham anuncia que Philip deixará o cargo de patrono ou presidente de mais de uma dúzia de organizações quando completar 90 anos.</li>
+                    <li><strong>Dezembro de 2010</strong> - O duque se torna bisavô pela primeira vez com a chegada da filha de Peter e Autumn Phillips, Savannah.</li>
+                    <li><strong>2011</strong> - O duque comemora seu 90º aniversário. A Rainha dá a ele um novo título - Lorde Alto Almirante, chefe titular da Marinha Real.</li>
+                    <li><strong>Natal de 2011</strong> - O duque é levado às pressas para o hospital de helicóptero após sofrer dores no peito. Ele passa quatro noites no hospital, incluindo o dia de Natal, e é tratado por uma artéria coronária bloqueada no Hospital Papworth em Cambridgeshire.</li>
+                    <li><strong>2012</strong> - O duque é forçado a perder a maioria das celebrações do Jubileu de Diamante da Rainha quando fica doente com uma infecção na bexiga.</li>
+                    <li><strong>2012</strong> - Philip é tratado de uma infecção na bexiga mais uma vez e passa cinco noites no hospital em Aberdeen, perdendo a abertura dos Jogos Paraolímpicos.</li>
+                    <li><strong>2013</strong> - Dois dias após o serviço religioso para marcar o 60º aniversário da coroação da Rainha, ele é hospitalizado para uma operação no abdômen e passa dois meses se recuperando.</li>
+                    <li><strong>Julho de 2013</strong> - Nasce o príncipe George, filho do duque e duquesa de Cambridge, terceiro na linha de sucessão ao trono, futuro rei e bisneto do duque.</li>
+                    <li><strong>Setembro de 2015</strong> - A Rainha se torna o monarca com o reinado mais longo da história britânica.</li>
+                    <li><strong>Abril de 2016</strong> - A rainha comemora 90 anos.</li>
+                    <li><strong>Junho de 2016</strong> - Philip completa 95 anos - seu aniversário coincide com um fim de semana de festividades pelo 90º aniversário oficial da Rainha.</li>
+                    <li><strong>28 de novembro de 2016</strong> - O duque de Edimburgo abriu oficialmente uma nova fábrica de bicicletas Brompton em Greenford, Londres.</li>
+                    <li><strong>Dezembro de 2016</strong> - <i>Quando Phillip conheceu o Príncipe Philip: 60 Anos do Prêmio Duque de Edimburgo</i>, foi ao ar na ITV, destaca as conquistas do programa de treinamento do Príncipe para jovens. Nele ele brincou com o apresentador Philip Schofield.</li>
+                    <li><strong>Dezembro de 2016</strong> - Durante dezembro, o palácio disse que a rainha e o duque de Edimburgo estavam resfriados intensamente e cancelaram seus planos de viajar para Sandringham em 21 de dezembro. Eles partiram para as férias de Natal com um dia de atraso, viajando de helicóptero em vez de trem. Dizem que o príncipe Philip se recuperou totalmente.</li>
+                    <li><strong>Maio de 2017</strong> - O Palácio de Buckingham anuncia que o duque se aposentará. Homenagens são pagas por seus anos de deveres reais. Ele foi fotografado dirigindo uma carruagem este mês.</li>
+                    <li><strong>13 de junho de 2017</strong> - A rainha e Philip visitam a estação ferroviária de Slough em Berkshire para marcar o 175º aniversário da primeira viagem ferroviária por um monarca.</li>
+                    <li><strong>14 de novembro de 2018</strong> - Philip se junta à Rainha em uma brilhante festa de gala privada realizada para o Príncipe de Gales em seu 70º aniversário no Palácio de Buckingham, onde a Rainha presta homenagem a seu filho mais velho em nome de ambos.</li>
+                    <li><strong>17 de janeiro de 2019</strong> -  O duque se envolve em um acidente de carro quando o Land Rover Freelander que ele dirigia capota após colidir com outro veículo perto da propriedade de Sandringham.</li>
+                    <li><strong>9 de fevereiro de 2019</strong> - O Palácio de Buckingham anuncia que o duque entregou voluntariamente sua carteira de motorista “depois de uma consideração cuidadosa”.</li>
+                    <h3><strong>Década de 2020</strong></h3>
+                    <li><strong>20 de abril de 2020</strong> - Em sua primeira declaração importante desde sua aposentadoria, o duque elogia trabalhadores da saúde, incluindo lixeiros e pessoal dos correios por seu trabalho, mantendo os serviços essenciais funcionando durante a pandemia de coronavírus.</li>
+                    <li><strong>10 de junho de 2020</strong> - O duque comemora seu 99º aniversário.</li>
+                    <li><strong>18 de dezembro de 2020</strong> - O duque presta homenagem a professores e funcionários da escola por seus esforços para ensinar as crianças da nação durante a pandemia de coronavírus. Ele elogia sua “dedicação abnegada” na mensagem enviada aos funcionários da escola em seu papel como patrono do Chartered College of Teaching.</li>
+                    <li><strong>9 de janeiro de 2021</strong> - O Palácio de Buckingham anuncia que a rainha e o príncipe Philip receberam suas vacinas Covid-19. Entende-se que a Rainha decidiu que a informação deveria ser tornada pública para evitar imprecisões e mais especulações. Uma fonte real confirmou que as injeções foram administradas por um médico doméstico no Castelo de Windsor.</li>
+                    <li><strong>4 e 5 de março de 2021</strong> - O Palácio de Buckingham anuncia que Philip teve um “procedimento bem-sucedido” para uma doença cardíaca pré-existente no Hospital St Bartholomew no dia anterior. Philip é transferido de volta para o Hospital favorito da família real do Rei Edward VII.</li>
+                    <li><strong>16 de março de 2021</strong> - Depois de passar 28 noites no hospital, o Duque recebe alta do Hospital do Rei Edward VII e retorna ao Castelo de Windsor. O Palácio de Buckingham diz que “deseja agradecer” ao pessoal médico que cuidou dele em ambos os hospitais e “a todos os que enviaram os seus votos de boa recuperação”.</li>
+                    <li><strong>9 de abril de 2021</strong> -  O Palácio de Buckingham emite uma declaração anunciando que o duque faleceu. Diz: “É com profunda tristeza que Sua Majestade, a Rainha, anuncia a morte de seu amado marido, Sua Alteza Real, o Príncipe Philip, Duque de Edimburgo. Sua Alteza Real faleceu pacificamente esta manhã no Castelo de Windsor. Novos anúncios serão feitos oportunamente. A Família Real junta-se a pessoas de todo o mundo no luto pela sua perda.”</li>
+            </section>
+            <footer>
+                <blockquote cite="https://www.bbc.com/news/uk-12277714">
+                    <p>"Constitucionalmente, não existo."</p>
+                    <cite>-- Filipe, Duque de Edimburgo</cite>
+                </blockquote>
+                <h3 class="wiki">Mais em <a id="tribute-link" href="https://pt.wikipedia.org/wiki/Filipe,_Duque_de_Edimburgo" target="_blank">Wikipedia entry</a>.</h3>
+            </footer>
+        </main>
+    </body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
