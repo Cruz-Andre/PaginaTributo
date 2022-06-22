@@ -3,6 +3,8 @@ Projeto para por em prática conhecimentos adquiridos nos cursos da Alura/Compas
 
 Desafio da FreeCodeCamp do curso atualizado de Responsive Web Design.
 
+GitHub Pages: https://cruz-andre.github.io/PaginaTributo/
+
 TODO além do desafio:
 1. Um menu para navegar diretamente em algum ponto da página.
 2. ...
