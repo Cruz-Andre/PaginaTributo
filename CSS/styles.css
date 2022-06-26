@@ -1,20 +1,62 @@
-body {
+html, body {
     font-family: 'Raleway', Arial, sans-serif;
-    font-size: 25px;
+    scroll-behavior: smooth;
     line-height: 1.5;
-    margin: 0;
     background-image: url(../imagens/bg.png);
     background-position: center;
+    font-size: 25px;
 }
 
+.indice {
+    top: 85px;
+    border-right: 2px solid rgb(162, 165, 166);
+    position: fixed;
+    min-width: 30px;
+    height: 100%;
+    width: 110px;
+    background: transparent;
+    
+    
+}
+.indice__caixa {
+    margin: 0;
+    height: 70%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+}
+
+.indice__item {
+    padding: 0.17rem 0 0.17rem 0;
+    font-size: 0.6rem;
+    text-align: center;
+}
+
+.indice__item:hover {
+    background: rgb(162, 165, 166);
+    border-radius: 10px;
+}
+
+.indice__item a:hover {
+    color: aliceblue;
+}
+
+.indice__item a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
 #main {
-    width: 92%;
+    position: absolute;
     background:linear-gradient(
         90deg, 
         rgba(244, 249, 250, 0.5), 
         rgba(244, 249, 250, 0.5)
         );
-    margin: 10px auto;
+    margin: 0 120px 0 120px;
     border-radius: 10px;
 }
 
@@ -22,48 +64,59 @@ img {
     max-width: fit-content;
 }
 
-.brasao {
-    display: block;
-    margin: 0 auto;
-    max-width: 50%;
+.cabecalho__brasao {
+   text-align: center;
+   background: linear-gradient(
+    90deg, 
+    rgba(244, 249, 250, 0.5), 
+    rgba(244, 249, 250, 0.5)
+    );
+    border-radius: 10px;
+}
+
+.img__brasao {
+    width: 80px;
 }
 
 #title {
     text-align: center;
-    font-size: 5rem;
+    font-size: 2.5rem;
     font-weight: bold;
+    padding: 0 10px;
 }
 
 .subTitulo {
     text-align: center;
     margin: 30px 0;
+    padding: 0 10px;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
+
 #image {
+    display: block;
     width: 80vmin;
     border-radius: 5px;
-    display: block;
-    margin: 0 auto;    
+    margin: 0 auto;
 }
 
 #img-caption {
     text-align: center;
     color: darkgrey;
-    font-size: 1.2rem;
+    font-size: 0.75rem;
     margin-top: 0;
-    padding-bottom: 1rem;
 }
 
 #headline {
     margin: 30px 0;
-    font-size: 2rem;
+    padding: 0 10px;
+    font-size: 1.3rem;
     font-weight: bold;
     text-align: center;
 }
 
-ul {
-    margin: 0 30px;
+main ul {
     padding: 0 30px;
 }
 
@@ -74,7 +127,7 @@ li {
 
 h3 {
     margin: 1.5rem 0 0 0;
-    font-size: 2rem;
+    font-size: 1.2rem;
     text-align: left;
 }
 
@@ -85,16 +138,19 @@ li strong, h3 strong {
 footer, .wiki {
     text-align: center;
     margin: 20px auto;
-    font-size: 25px;
+    font-size: 1rem;
 }
 
 footer p {
     font-style: italic;
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 940px) {
+    .indice {
+        display: none;
+    }
+
     #main {
-        width: 99%;
         margin: 10px auto;
     }
     
@@ -107,21 +163,27 @@ footer p {
     }
     
     #title {
-        font-size: 3rem;
-        font-weight: bold;
-        word-wrap: normal;
+        font-size: 1.5rem;
         margin: 0 2px;
+    }
+
+    .subTitulo {
+        font-size: 0.9rem;
     }
     
     #img-caption {
-        font-size: 1rem;
+        font-size: 0.54rem;
     }
 
-    ul {
+    #headline {
+        font-size: 0.9rem;
+    }
+
+    main ul {
         margin-left: 10px;
         margin-right: 10px;
         padding-left: 0;
         padding-right: 0;
     }
     
-} 
+}
